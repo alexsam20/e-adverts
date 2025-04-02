@@ -76,9 +76,10 @@
         </div>
     </nav>
 </header>
-<main class="app-content py-4">
+<main class="app-content py-3">
     <div class="container">
         @yield('breadcrumbs')
+        @include('layouts.partials.flash')
         @yield('content')
     </div>
 </main>
@@ -90,6 +91,5 @@
         </div>
     </div>
 </footer>
-<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
 </body>
 </html>
