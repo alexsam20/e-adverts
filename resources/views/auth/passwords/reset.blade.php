@@ -1,5 +1,14 @@
 @extends('layouts.app')
 
+@section('breadcrumbs')
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ route('home')  }}">{{ __('Home') }}</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('login')  }}">{{ __('Login') }}</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('password.request')  }}">{{ __('Reset') }}</a></li>
+        <li class="breadcrumb-item active">{{ __('Change') }}</li>
+    </ul>
+@endsection
+
 @section('content')
     <div class="row justify-content-center">
         <div class="col-md-8">
