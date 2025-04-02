@@ -1,12 +1,7 @@
 @extends('layouts.app')
 
 @section('breadcrumbs')
-    <ul class="breadcrumb">
-        {!! Breadcrumbs::render() !!}
-{{--        <li class="breadcrumb-item"><a href="{{ route('home')  }}">{{ __('Home') }}</a></li>--}}
-{{--        <li class="breadcrumb-item"><a href="{{ route('login')  }}">{{ __('Login') }}</a></li>--}}
-{{--        <li class="breadcrumb-item active">{{ __('Reset Password') }}</li>--}}
-    </ul>
+    {{ Breadcrumbs::render() }}
 @endsection
 
 @section('content')

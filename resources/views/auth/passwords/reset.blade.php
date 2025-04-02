@@ -1,9 +1,7 @@
 @extends('layouts.app')
 
 @section('breadcrumbs')
-    <ul class="breadcrumb">
-        {!! Breadcrumbs::render() !!}
-    </ul>
+    {{ Breadcrumbs::render() }}
 @endsection
 
 @section('content')

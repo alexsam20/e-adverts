@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('breadcrumbs')
-    {!! \Diglactic\Breadcrumbs\Breadcrumbs::render('login') !!}
+    {{ Breadcrumbs::render() }}
 @endsection
 
 @section('content')
