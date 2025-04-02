@@ -1,10 +1,7 @@
 @extends('layouts.app')
 
 @section('breadcrumbs')
-    <ul class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{ route('home')  }}">{{ __('Home') }}</a></li>
-        <li class="breadcrumb-item active">{{ __('Login') }}</li>
-    </ul>
+    {!! \Diglactic\Breadcrumbs\Breadcrumbs::render('login') !!}
 @endsection
 
 @section('content')

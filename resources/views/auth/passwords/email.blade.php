@@ -2,9 +2,10 @@
 
 @section('breadcrumbs')
     <ul class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{ route('home')  }}">{{ __('Home') }}</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('login')  }}">{{ __('Login') }}</a></li>
-        <li class="breadcrumb-item active">{{ __('Reset Password') }}</li>
+        {!! Breadcrumbs::render() !!}
+{{--        <li class="breadcrumb-item"><a href="{{ route('home')  }}">{{ __('Home') }}</a></li>--}}
+{{--        <li class="breadcrumb-item"><a href="{{ route('login')  }}">{{ __('Login') }}</a></li>--}}
+{{--        <li class="breadcrumb-item active">{{ __('Reset Password') }}</li>--}}
     </ul>
 @endsection
 
